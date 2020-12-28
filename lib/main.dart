@@ -83,8 +83,13 @@ class GameBoardState extends State<GameBoard> {
           return Foo(
             index: index,
             child: Container(
-              color: selectedIndexes.contains(index) ? Colors.teal[400]: Colors.teal[100],
-              child: Text(name, style: TextStyle(color: Colors.white, decoration: TextDecoration.none), textAlign: TextAlign.center),
+              color: selectedIndexes.contains(index)
+                  ? Colors.teal[400]
+                  : Colors.teal[100],
+              child: Text(name,
+                  style: TextStyle(
+                      color: Colors.white, decoration: TextDecoration.none),
+                  textAlign: TextAlign.center),
             ),
           );
         },
@@ -119,4 +124,3 @@ class Foo extends SingleChildRenderObjectWidget {
 class GameBox extends RenderProxyBox {
   int index;
 }
-
