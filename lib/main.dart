@@ -3,11 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'package:list_english_words/list_english_words.dart';
-import 'package:quiver/iterables.dart';
-import 'package:collection/collection.dart';
 import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 void main() => runApp(MyApp());
@@ -82,6 +78,7 @@ class GameBoardState extends State<GameBoard> {
           mainAxisSpacing: 20.0,
         ),
         itemBuilder: (context, index) {
+          // TODO: gameboard.letterAtIndex(index)
           final name = index.toString();
           return Foo(
             index: index,
